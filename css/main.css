@@ -1,0 +1,239 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+table,table td{padding:0;border:none;border-collapse:collapse;}
+img{vertical-align:top;}
+embed{vertical-align:top;}
+input[type=text],textarea{outline:none;border-radius:0;}
+
+*{
+    box-sizing: border-box;
+}
+/* !Убираем ненужное */
+
+:root {
+    --color-one: #111;
+    --color-two: #fff;
+    --color-tree: #989898;
+    --color-foor: #e8ab4e;
+    --color-five: #c3c3c3;
+}
+body{
+    background-color: #111;
+}
+
+
+/* ////////////////////////////////////////// HEADER */
+header.header{
+    background-color: rgba(17, 17, 17, 0.5);
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 110px;
+    justify-content: space-between;
+    z-index: 999;
+}
+.constraint{
+    padding: 0 9%;
+}
+.f-h-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+
+}
+.logo p{
+    font-size: 28px;
+    height: max-content;
+}
+
+.logo p,nav a{
+    color: var(--color-two);
+    font-family:"Lato-Black";
+}
+
+nav{
+    
+}
+
+nav ul{
+    
+}
+
+nav ul {
+    
+}
+
+nav li {
+    padding-right: 20px;
+}
+nav li:last-child {
+    padding-right: 0px;
+}
+
+nav a{
+    font-size: 14px;
+   text-transform: uppercase;
+}
+
+/* ////////////////////////////////////////// HEADER */
+
+/* ////////////////////////////////////////// MAIN START-VIDEO */
+main{
+ display: flex;
+ flex-direction: column;
+}
+
+main section{
+    
+}
+
+section{
+
+}
+
+section.Start_video{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-one);
+    position: fixed;
+    overflow: hidden;
+}
+
+.Start_video header{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.Start_video .container{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(17, 17, 17, 0.650);
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+}
+.Start_video h1{
+    color: var(--color-tree);
+    font-family: "OpenSans-Light";
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.Start_video h1 span{
+    color: var(--color-foor);
+    font-family: "OpenSans-Bold"; 
+}
+
+.Start_video p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: "OpenSans-Regular";
+    text-align: center;
+    color: var(--color-tree);
+}
+
+.Start_video p span{
+    font-family: "OpenSans-Bold";
+    color: var(--color-five);
+}
+
+.Start_video video {
+    top: 0 ;
+    /* height: 100vh; */
+    width: 99.8vw;
+    display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+
+/* video::-webkit-media-controls {
+    display:none !important;
+  } */
+/* ////////////////////////////////////////// MAIN START-VIDEO */
+
+
+/* ////////////////////////////////////////// MAIN ABOUT-US */ 
+   section.About_us{
+       height: 615px;
+       width: 100%;
+       margin-top: 100vh;
+       background-color: var(--color-two);
+       position: relative;
+       overflow: hidden;
+   }
+   
+   .About_us header{
+       position: absolute;
+       display: flex;
+       height: 100%;
+       width: 100%;
+       flex-direction: column;
+       
+   }
+   
+   /* ////////////////////////////////////////// MAIN ABOUT-US */
+
+
+
+    /* ////////////////////////////////////////// MAIN OUR-TEAM */ 
+    section.Our_team{
+        height: 615px;
+        width: 100%;
+       
+        background-color: var(--color-five);
+        position: relative;
+        
+    }
+
+    .About_us header{
+        
+        
+    }
+
+    /* ////////////////////////////////////////// MAIN OUR-TEAM */
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar-track {
+    background-color:aliceblue
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color:#41424a;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+    background-color:#41424a;
+    }
+    
+    ::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar{
+    width: 4px;
+    }
