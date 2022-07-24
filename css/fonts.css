@@ -21,27 +21,32 @@
 
     @font-face {
         font-family: "OpenSans-Bold";  
-        src: url("../fonts/OpenSans-Bold.TTF") format("truetype"); 
+        src:  url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+              url("../fonts/OpenSans-Bold.TTF") format("truetype"); 
        
     }
 
     @font-face {
         font-family: "OpenSans-SemiBold";  
-        src: url("../fonts/OpenSans-SemiBold.TTF") format("truetype"); 
+        src:    url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+                url("../fonts/OpenSans-SemiBold.TTF") format("truetype"); 
         
     }
     @font-face {
         font-family: "OpenSans-Italic";  
-        src: url("../fonts/OpenSans-Italic.TTF") format("truetype"); 
+        src:    url('../fonts/OpenSans-Italic.woff2') format('woff2'),
+                url("../fonts/OpenSans-Italic.TTF") format("truetype"); 
        
     }
     @font-face {
         font-family: "OpenSans-Light";  
-        src: url("../fonts/OpenSans-Light.TTF") format("truetype"); 
+        src:    url('../fonts/OpenSans-Light.woff2') format('woff2'),
+                url("../fonts/OpenSans-Light.TTF") format("truetype"); 
         
     }
     @font-face {
         font-family: "OpenSans-Regular";  
-        src: url("../fonts/OpenSans-Regular.TTF") format("truetype"); 
+        src:    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+                url("../fonts/OpenSans-Regular.TTF") format("truetype"); 
      
     }
