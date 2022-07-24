@@ -14,14 +14,50 @@ input[type=text],textarea{outline:none;border-radius:0;}
 :root {
     --color-one: #111;
     --color-two: #fff;
-    --color-tree: #989898;
-    --color-foor: #e8ab4e;
+    --color-three: #989898;
+    --color-four: #e8ab4e;
     --color-five: #c3c3c3;
+    --color-six: #5a5a5a;
+    --color-seven: #272727;
 }
 body{
     background-color: #111;
 }
+.svg-cont{
+    display: none;
+}
 
+section header h2{
+    font-size: 44px;
+    font-family: "OpenSans-Light";
+    text-transform: uppercase;
+    text-align: center;
+}
+section header span{
+    font-family: "OpenSans-SemiBold";
+}
+.white_theme{
+    background-color: var(--color-two);
+}
+.dark_theme{
+    background-color: var(--color-one);
+}
+section.white_theme header h2{
+color: var(--color-seven);
+}
+section.white_theme header span{
+
+}
+section.dark_theme header h2{
+    color: var(--color-two);
+}
+section.dark_theme header span{
+    
+}
+
+.constraint{
+    padding: 100px 9%;
+}
 
 /* ////////////////////////////////////////// HEADER */
 header.header{
@@ -32,10 +68,10 @@ header.header{
     height: 110px;
     justify-content: space-between;
     z-index: 999;
+    padding-top: 0;
+    padding-bottom: 0;
 }
-.constraint{
-    padding: 0 9%;
-}
+
 .f-h-c{
     display: flex;
     justify-content: center;
@@ -122,7 +158,7 @@ section.Start_video{
     padding-top: 300px;
 }
 .Start_video h1{
-    color: var(--color-tree);
+    color: var(--color-three);
     font-family: "OpenSans-Light";
     font-size: 44px;
     text-transform: uppercase;
@@ -131,7 +167,7 @@ section.Start_video{
 }
 
 .Start_video h1 span{
-    color: var(--color-foor);
+    color: var(--color-four);
     font-family: "OpenSans-Bold"; 
 }
 
@@ -140,11 +176,11 @@ section.Start_video{
     font-size: 20px;
     font-family: "OpenSans-Regular";
     text-align: center;
-    color: var(--color-tree);
+    color: var(--color-three);
 }
 
 .Start_video p span{
-    font-family: "OpenSans-Bold";
+    font-family: "OpenSans-SemiBold";
     color: var(--color-five);
 }
 
@@ -165,44 +201,250 @@ section.Start_video{
 
 
 /* ////////////////////////////////////////// MAIN ABOUT-US */ 
-   section.About_us{
-       height: 615px;
-       width: 100%;
-       margin-top: 100vh;
-       background-color: var(--color-two);
-       position: relative;
-       overflow: hidden;
-   }
-   
-   .About_us header{
-       position: absolute;
+section.About_us{
+    width: 100%;
+    margin-top: 100vh;
+    background-color: var(--color-two);
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+    .About_us .image_cont{
+        position: relative;
+        display: flex;
+        width: max-content;
+        height: 100%;
+    }
+    .About_us .comp{
+        z-index: 3;
+        height: 500px;
+        width: 600px;
+        /* display: none; */
+    }
+
+    .About_us .comp_shadow{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 132%;
+        width: 145%;
+        border-radius: 20px;
+    }
+
+    .About_us .text{
+        width: 46%;
+        z-index: 3;
+    }
+    .About_us h3,.About_us h2{
+        text-transform: uppercase;
+
+    }
+    .About_us h3{
+        font-size: 20px;
+        font-family: "OpenSans-Light";
+        color: var(--color-three);
+    }
+
+    .About_us h2{
+        font-size: 34px;
+        font-family: "OpenSans-Light";
+        text-align: left;
+    }
+    .About_us h2 span{
+        font-family: "OpenSans-Bold";
+    }
+    .About_us .desc{
+        margin: 50px 0;
+        width: 68%;
+        font-size: 18px;
+        font-family: "OpenSans-Regular";
+        color: var(--color-three);
+    }
+    .About_us ul{
+       margin-bottom: 50px;
+    }
+
+    .About_us li.item{
        display: flex;
-       height: 100%;
-       width: 100%;
-       flex-direction: column;
-       
-   }
-   
+       align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .About_us .item p{
+        font-family: "OpenSans-Italic";
+        font-size: 16px;
+        color: var(--color-three);
+        display: flex;
+        align-items: center;
+    }
+    .About_us .item span{
+        font-family: "OpenSans-SemiBold";
+        font-size: 18px;
+        color: var(--color-six);
+        margin-right: 5px;
+    }
+
+    .About_us i{
+        color: var(--color-six);
+        margin-right: 10px;
+    }
+    .About_us button{
+        background-color: transparent;
+        border: 1px solid var(--color-six);
+        color: var(--color-six);
+        font-family: "OpenSans-SemiBold";
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 15px 20px;
+        border-radius: 5px;
+    }
    /* ////////////////////////////////////////// MAIN ABOUT-US */
+
+
+    
+
+
 
 
 
     /* ////////////////////////////////////////// MAIN OUR-TEAM */ 
     section.Our_team{
-        height: 615px;
         width: 100%;
-       
         background-color: var(--color-five);
         position: relative;
+        background-color: #111;
+     
+    }
+
+    .Our_team header{
+        margin-bottom: 130px;
+    }
+
+    .Our_team h2{
         
     }
 
-    .About_us header{
-        
-        
+    .Our_team .list{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Our_team .item{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        align-items: center;
+    }
+
+    .Our_team .eclipse{
+        width: 127px;
+        height:127px ;
+        background-color: #c3c3c3;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .Our_team p{
+        text-align: center;
+        color: var(--color-two);
+    }
+    .Our_team .name{
+        font-size: 20px;
+        font-family: "OpenSans-Bold";
+    }
+    .Our_team .position{
+        font-size: 16px;
+        font-family: "OpenSans-Regular";
+    }
+    .Our_team .description{
+        margin-top: 30px;
+        font-size: 14px;
+        font-family: "OpenSans-Regular";
+        padding: 0 9%;
+        line-height: 1.3vw;
     }
 
     /* ////////////////////////////////////////// MAIN OUR-TEAM */
+
+
+    /* ////////////////////////////////////////// MAIN OUR-SERVICES */ 
+
+
+        section.Our_services{
+            width: 100%;
+            position: relative;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .Our_services header{
+            margin-bottom: 90px;
+        }
+        .Our_services blockquote{
+            font-family: "OpenSans-Italic";
+            font-size: 16px;
+            color: var(--color-six);
+            margin-bottom: 100px;
+            text-align: center;
+            width: 80%;
+            line-height: 1.4vw;
+        }
+        .Our_services .list{
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .Our_services .item{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+        }
+        .Our_services .eclipse{
+            width: 127px;
+            height:127px ;
+            background-color: transparents;
+            border: 5px solid var(--color-four);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Our_services svg{
+            width: 50%;
+            height: 50%;
+            color: var(--color-one);
+            fill: var(--color-one);
+
+        }
+        .Our_services .serv_name{
+            text-transform: uppercase;
+            font-size: 25px;
+            font-family: "OpenSans-Bold";
+            margin-bottom: 15px;
+        }
+        .Our_services .description{
+            text-align: center;
+            font-family: "OpenSans-Regular";
+            font-size: 14px;
+            padding: 0 9%;
+
+        }
+        .Our_services .svg_serv{
+            color: var(--color-one);
+            fill: var(--color-one);
+        }
+
+    /* ////////////////////////////////////////// MAIN OUR-SERVICES */ 
+
+
+
 
 /* /////////////////////////////////////////////////////////////////////// */
 
