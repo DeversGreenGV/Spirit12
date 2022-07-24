@@ -29,7 +29,8 @@ body{
 
 section header h2{
     font-size: 44px;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans-Light",sans-serif;
+    font-weight: lighter;
     text-transform: uppercase;
     text-align: center;
 }
@@ -253,6 +254,7 @@ section.About_us{
         font-size: 34px;
         font-family: "OpenSans-Light";
         text-align: left;
+        font-weight: bold;
     }
     .About_us h2 span{
         font-family: "OpenSans-Bold";
@@ -376,8 +378,7 @@ section.About_us{
         section.Our_services{
             width: 100%;
             position: relative;
-            padding-top: 100px;
-            padding-bottom: 100px;
+           
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -396,6 +397,7 @@ section.About_us{
         }
         .Our_services .list{
             display: flex;
+           
             justify-content: space-around;
         }
     
@@ -408,7 +410,7 @@ section.About_us{
         .Our_services .eclipse{
             width: 127px;
             height:127px ;
-            background-color: transparents;
+            background-color: transparent;
             border: 5px solid var(--color-four);
             border-radius: 50%;
             margin-bottom: 20px;
@@ -441,10 +443,185 @@ section.About_us{
             fill: var(--color-one);
         }
 
-    /* ////////////////////////////////////////// MAIN OUR-SERVICES */ 
+    /* //////////////////////////////////////////  MAIN OUR-SERVICES */ 
+
+   
+
+    /* ////////////////////////////////////////// MAIN OUR-CLIENTS */ 
 
 
+    section.Our_clients{
+        width: 100%;
+        position: relative;
+        height: 500px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .Our_clients header{
+        margin-bottom: 90px;
+    }
+    .Our_clients .list{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
 
+    .Our_clients .item{
+        display: flex;
+        align-items: flex-end;
+        width: max-content;
+        justify-content: flex-end;
+    }
+
+
+    /* ////////////////////////////////////////// MAIN OUR-CLIENTS */ 
+
+
+    /* ////////////////////////////////////////// MAIN OUR-WORK */ 
+
+
+    section.Our_work{
+        width: 100%;
+        position: relative;
+    
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .Our_work header{
+        margin-bottom: 90px;
+    }
+    .Our_work blockquote{
+        font-family: "OpenSans-Italic";
+        font-size: 16px;
+        color: var(--color-six);
+        margin-bottom: 100px;
+        text-align: center;
+        width: 80%;
+        line-height: 1.4vw;
+    }
+    .Our_work .list{
+        width: 100%;
+    }
+    .Our_work .list_heading{
+        width: 100%;
+       display: flex;
+       justify-content: space-between;
+    }
+    .Our_work .title{
+        color: var(--color-one);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+    }
+
+    .Our_work .title,.Our_work .categories p{
+        font-family: "OpenSans-SemiBold";
+        font-size: 18px;
+    }
+
+    .Our_work .categories{
+        display: flex;
+        justify-content: space-between;
+       align-items: center;
+    }
+
+    .Our_work .categories p{
+       color: var(--color-three);
+      
+    }
+
+    .Our_work .categories p.active{
+        
+        color: var(--color-six);
+    }
+
+    .Our_work .categories hr{
+        background-color: var(--color-three);
+        height: 20px;
+        border: none;
+        width: 2px;
+        margin: 0 15px;
+    
+    }
+
+    .Our_work .categories p:last-child{
+        margin-right: 0px;
+    }
+
+    .Our_work .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .Our_work .item{
+        width: 22.2%;
+        height: 15vw;
+        background-color: #111;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .Our_work .item img{
+        width: 100%;
+        height: 100%;
+    }
+    .Our_work .item:hover .item_hover{
+        opacity: 1;
+    }   
+    .Our_work .item_hover{
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-seven);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transition: opacity ease-in-out 0.4s;
+    }
+
+    .Our_work .item_hover .caption,.Our_work .item_hover .category{
+        text-align: center;
+        color: var(--color-two);
+        user-select: none;
+    }
+    .Our_work .item_hover .caption{
+        text-transform: uppercase;
+        font-family: "OpenSans-SemiBold";
+        font-size: 24px;
+        margin-top: 65px;
+        margin-bottom: 5px;
+    }
+    .Our_work .item_hover .category{
+        font-family: "OpenSans-SemiBold";
+        font-size: 16px;
+        color: #c3c3c3;
+    }
+    .Our_work .item_hover svg{
+        margin-top: 25px;
+        width: 16%;
+        height: 16%;
+        fill: var(--color-four);
+        cursor: pointer;
+    }
+    .Our_work .item_hover svg use:last-child{
+        opacity: 0;
+    }
+    .Our_work .item_hover svg:hover use:first-child{
+        opacity: 0;
+    }
+    .Our_work .item_hover svg:hover use:last-child{
+        opacity: 1;
+    }
+
+    /* ////////////////////////////////////////// MAIN OUR-WORK  */ 
 
 /* /////////////////////////////////////////////////////////////////////// */
 

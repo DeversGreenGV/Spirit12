@@ -46,6 +46,13 @@
         
     }
     @font-face {
+        font-family: "OpenSans-Light";  
+        src:    url('../fonts/OpenSans-Light.woff2') format('woff2'),
+                url('../fonts/OpenSans-Light.woff') format('woff'),
+                url("../fonts/OpenSans-Light.TTF") format("truetype"); 
+        
+    }
+    @font-face {
         font-family: "OpenSans-Regular";  
         src:    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
                 url("../fonts/OpenSans-Regular.TTF") format("truetype"); 
