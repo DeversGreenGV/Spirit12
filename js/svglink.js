@@ -39,6 +39,33 @@ svg[5]= `<svg xmlns="http://www.w3.org/2000/svg"  width="43" height="43" viewBox
                 <image id="Слой_1" data-name="Слой 1" width="40" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAEIUlEQVRYhc2ZXYhVVRTHf/fc2zgzld+jJGiiYLexfJYkfbAgHAIL8isoGxUCBS1TX4QifTCjB6G3SJDyM+ulJHwYEBUfFEkftCGREoP8GFFHND/u3CNr+O/hzPHcufs627n+4XKHc8/s89vrrL3W2mvn4jgmqbPb2/BQDoiAZ4ER+jwPNOi3HsAGvgf8D3QDt4DbwAP9VlWt7Qf63dIH6wmZF9grwOvAHOAlYJRA84l7y4K+D9wELgIngQ7gONAFlGqBLniCmrVGA3OBj4BZwHO6Xk1NmuAk4DXgY+AvYAewD/hXE6uqyOOeRlnQBv8BeEuv3Ac0a9INejNfAb8C78idKsoZsxrsGGAlsBdo04NCyZ49QwbYCIytOlPz2QpuMBHYAKwIDJklc4OdwHrgUqWb8gsmnci6PgH4HFgOPPOEQZF7mJXHAYcVQR5RlhuM0Ktf6hbgEMmA3wc+AZp9YA1uHrBqiCyaloW+tWJ4ZAGnYacA64DhdQB1slD3JfBi+ockrC2iBfKdequYtbCTsDaTD1NZqF7KaXEXs2Dt+225waD07tbzja3tB3J37pYzV3QNssiwKLl2HKyl0sWeGa2arB6guTFqCjCWMb2QhDWTTwdeDTA4DjaQLDHNdJEhko++CQwLMX5nZ6dX+eepvNyzkURNOjegNULLLDsSwVotOu0pgKokS/0tCLZFJd/TKnPP8Si9jqkltl7tLt0ox/22JbHbEZR6yrdaw884UrTKFVS4eBfSc9YcHOVzn8Xa9LViseiuRfs/m3oviryN1OyoG3xhy2XKiQdmQQyoRKSIawBFby/Onfl+3hLgx8fcpvRTV3fpwuw1ByfbtbPb20KFMBvnPeBns+wN362xh3qt9bKnpT1VFmOvG3QFzDoFuURIWOszXEewV9WACKEQtUVaxnbNwdof/wQaOJ/4hNIFdXR6Ya2UOxRo4IJKupBbIuvi3EGw1sL5Xb4xWOWVcYIURWo9dTi2SJHgD+DPQLBWGIVaYH/Lsr3tJbfVtsbZd8C2wSySscMLTb+sn2q9qxAywJ+A/9xYDsxc4TdLMmGeE0Tngf3A3TQsaklukZ/UW8bwrbqNcRZsj6y7L2BGexzFsuiedBsp7Z+WKTYDp+sIexTYpGTVT1mL6RywOmCi8FWslf9p+vU7ZcHaKjwGLJOTDxXoMTU2TlbqhFcKUyW1Hq18PPKEfbikddIOnBroWQPFVBvEmrcfAF+7Mi2wrHH8hdzuXLWhqyWAWL5rXb35wK5A9a8VJruBhcA3wGWfMQdq06cVqRVq2/Y31BhJHitVqmNjfW5r4h06+DiliXud1NQK2/c/StPDtDMere18i8BtA2obPKsTrAAxoCvK85Z4LCRZ/Kzp7dhZWK2Hdj4TcTWtK5Lc4Z191+w+faeMwENZ1QWP+EpI9gAAAABJRU5ErkJggg=="/>
             </symbol>
         </svg>`;
+svg[6]= `<svg xmlns="http://www.w3.org/2000/svg"  width="31" height="31" viewBox="0 0 31 31"  >
+            <symbol id="my-7-icon" viewBox="0 0 31 31">
+                <path id="facebook" class="cls-1" d="M1125.5,6139a15.5,15.5,0,1,0,15.5,15.5A15.5,15.5,0,0,0,1125.5,6139Zm0,28.58a13.08,13.08,0,1,1,13.08-13.08A13.085,13.085,0,0,1,1125.5,6167.58Zm3.68-15.45h-2.7v-1.97a0.833,0.833,0,0,1,.92-0.74h1.74v-2.66l-2-.01a3.056,3.056,0,0,0-3.34,3.25v2.13h-1.98v2.73h1.98v7.39h2.68v-7.39h2.28Z" transform="translate(-1110 -6139)"/>
+            </symbol>
+        </svg>`;
+svg[7]= `<svg xmlns="http://www.w3.org/2000/svg"  width="31.5" height="31.5" viewBox="0 0 31.5 31.5"  >
+            <symbol id="my-8-icon" viewBox="0 0 31.5 31.5">
+                <path id="twitter" class="cls-1" d="M1170.5,6138.5a15.75,15.75,0,1,0,15.75,15.75A15.748,15.748,0,0,0,1170.5,6138.5Zm0,29.04a13.29,13.29,0,1,1,13.29-13.29A13.29,13.29,0,0,1,1170.5,6167.54Zm7.87-18.52a5.566,5.566,0,0,1-1.8.55,3.764,3.764,0,0,0,1.36-1.9,5.107,5.107,0,0,1-2.03.77h0a3.126,3.126,0,0,0-2.35-1.08,3.387,3.387,0,0,0-3.25,3.5,3.967,3.967,0,0,0,.08.78h0a9.14,9.14,0,0,1-6.88-3.63,3.664,3.664,0,0,0,.99,4.62,2.009,2.009,0,0,1-1.42-.39,3.347,3.347,0,0,0,2.5,3.42,2.461,2.461,0,0,1-1.35.11,3.116,3.116,0,0,0,2.9,2.37,5.067,5.067,0,0,1-4.5,1.45,9.273,9.273,0,0,0,5.09,1.55c5.24,0,9.31-4.57,9.09-10.22v-0.11A5.8,5.8,0,0,0,1178.37,6149.02Z" transform="translate(-1154.75 -6138.5)"/>
+            </symbol>
+        </svg>`;   
+svg[8]= `<svg xmlns="http://www.w3.org/2000/svg"  width="30.84" height="30.84" viewBox="0 0 30.84 30.84"  >
+            <symbol id="my-9-icon" viewBox="0 0 30.84 30.84">
+                <path id="google" class="cls-1" d="M1215.42,6138.67a15.415,15.415,0,1,0,15.41,15.41A15.413,15.413,0,0,0,1215.42,6138.67Zm0,28.42a13.005,13.005,0,1,1,13-13.01A13,13,0,0,1,1215.42,6167.09Zm1.33-20.24a5.506,5.506,0,0,0,.75-0.48h-5.02c-1,0-3.79,1.14-3.79,3.8s2.89,3.24,3.94,3.2a1.22,1.22,0,0,0,.23,1.71c0.32,0.34.25,0.44-.12,0.44s-5.04.05-5.04,3.39,6.19,3.57,8.23,1.78a3.361,3.361,0,0,0,.02-5.4c-1.58-1.12-2.16-1.65-1.16-2.54s1.81-1.6,1.81-3.25a3.118,3.118,0,0,0-1.37-2.5A2.972,2.972,0,0,0,1216.75,6146.85Zm-0.78,11.89c0,1.44-1.22,2.14-3.3,2.14s-3.19-1.04-3.19-2.58,1.52-2.31,4.35-2.31C1214.6,6156.58,1215.97,6157.3,1215.97,6158.74Zm-3-6.03c-2.5,0-3.63-5.83-.69-5.83C1214.56,6146.79,1216.28,6152.71,1212.97,6152.71Zm8.27-4.41v-1.89h-0.98v1.89h-1.92v0.99h1.92v1.9h0.98v-1.9h1.89v-0.99h-1.89Z" transform="translate(-1200 -6138.66)"/>
+            </symbol>
+        </svg>`; 
+svg[9]= `<svg xmlns="http://www.w3.org/2000/svg"  width="30.5" height="30.5" viewBox="0 0 30.5 30.5"  >
+            <symbol id="my-10-icon" viewBox="0 0 30.5 30.5">
+                <path id="linkedin" class="cls-1" d="M1260.25,6139a15.25,15.25,0,1,0,15.25,15.25A15.253,15.253,0,0,0,1260.25,6139Zm0,28.12a12.87,12.87,0,1,1,12.87-12.87A12.867,12.867,0,0,1,1260.25,6167.12Zm-7.62-5.25h2.86v-11.44h-2.86v11.44Zm11.44-11.44a5.229,5.229,0,0,0-3.81,1.91v-1.91h-2.86v11.44h2.86v-6.67a2.42,2.42,0,0,1,2.85-1.91c1.22,0.08,1.87,1.68,1.91,1.91v6.67l2.85,0.01v-7.92A3.566,3.566,0,0,0,1264.07,6150.43Zm-10.01-3.81a1.43,1.43,0,1,0,1.43,1.43A1.43,1.43,0,0,0,1254.06,6146.62Z" transform="translate(-1245 -6139)"/>
+            </symbol>
+        </svg>`;
+svg[10]= `<svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30" viewBox="0 0 30 30"  >
+            <symbol id="my-11-icon" viewBox="0 0 30 30">
+                <path id="dribbble" class="cls-1" d="M1305.12,6139.37a15,15,0,1,0,15,15A15.005,15.005,0,0,0,1305.12,6139.37Zm0,27.66a12.655,12.655,0,1,1,12.66-12.66A12.654,12.654,0,0,1,1305.12,6167.03Zm0-20.16a7.5,7.5,0,1,0,7.5,7.5A7.509,7.509,0,0,0,1305.12,6146.87Zm4.6,3.89a5.843,5.843,0,0,1,1.25,3.34,11.593,11.593,0,0,0-2.39-.27h-0.01a10.023,10.023,0,0,0-1.69.15c-0.13-.32-0.26-0.62-0.4-0.91A9.079,9.079,0,0,0,1309.72,6150.76Zm-4.6-2.24a5.813,5.813,0,0,1,3.65,1.29,7.536,7.536,0,0,1-2.87,2.05,20.838,20.838,0,0,0-2.02-3.2A6.365,6.365,0,0,1,1305.12,6148.52Zm-2.58.61a17.853,17.853,0,0,1,2.09,3.19,17.124,17.124,0,0,1-4.62.64h-0.56A5.9,5.9,0,0,1,1302.54,6149.13Zm-3.27,5.24a0.249,0.249,0,0,1,.01-0.08c0.16,0.01.38,0.01,0.64,0.01h0a18.382,18.382,0,0,0,5.31-.76c0.11,0.25.22,0.51,0.33,0.77a9.288,9.288,0,0,0-3.29,1.95,9.617,9.617,0,0,0-1.61,1.88A5.775,5.775,0,0,1,1299.27,6154.37Zm5.85,5.86a5.747,5.747,0,0,1-3.47-1.16,8.609,8.609,0,0,1,1.36-1.67,8.024,8.024,0,0,1,3.04-1.84,30.219,30.219,0,0,1,1.15,4.28A5.739,5.739,0,0,1,1305.12,6160.23Zm3.32-1.04a30.242,30.242,0,0,0-1.08-3.93,7.691,7.691,0,0,1,1.2-.09h0.01a10.357,10.357,0,0,1,2.3.28A5.861,5.861,0,0,1,1308.44,6159.19Z" transform="translate(-1290.12 -6139.38)"/>
+            </symbol>
+        </svg>`;
+
+
 for (let index = 0; index < svg.length; index++) {
     document.body.querySelector('.svg-cont').insertAdjacentHTML('beforeend', svg[index])
     

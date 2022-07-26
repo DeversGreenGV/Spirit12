@@ -623,6 +623,189 @@ section.About_us{
 
     /* ////////////////////////////////////////// MAIN OUR-WORK  */ 
 
+
+    /* ////////////////////////////////////////// MAIN OUR-TESTIMONIALS */ 
+
+
+    section.Our_testimonials{
+        width: 100%;
+        position: relative;
+        height: 500px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .Our_testimonials header{
+        margin-bottom: 90px;
+    }
+    .Our_testimonials .quote{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .Our_testimonials blockquote{
+        font-family: "OpenSans-SemiBold";
+        font-size: 18px;
+        color: var(--color-six);
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 80%;
+        line-height: 1.4vw;
+        color: var(--color-two);
+    }
+    .Our_testimonials .name{
+        color: var(--color-three);
+        font-family:"OpenSans-SemiBold" ;
+        font-family:"OpenSans-Regular";
+    }
+    .Our_testimonials .name span{
+        font-family:"OpenSans-SemiBold" ;
+    }
+
+
+    /* ////////////////////////////////////////// MAIN OUR-TESTIMONIALS */ 
+
+
+
+    /* ////////////////////////////////////////// MAIN CONTACT-US */ 
+
+
+    section.Contact_us{
+        width: 100%;
+        position: relative;
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact_us header{
+        margin-bottom: 90px;
+    }
+    .Contact_us blockquote{
+        font-family: "OpenSans-Italic";
+        font-size: 16px;
+        color: var(--color-six);
+        margin-bottom: 100px;
+        text-align: center;
+        width: 70%;
+        line-height: 1.4vw;
+    }
+    .Contact_us form{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .Contact_us .name, .Contact_us .email {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .Contact_us label{
+        display: flex;
+        flex-direction: column;
+        font-family: "OpenSans-SemiBold";
+        color: var(--color-six);
+        font-size: 14px;
+    }
+    .Contact_us label span{    
+        margin-left: 5px;
+        color: var(--color-four);
+    }
+    
+    .Contact_us input,  .Contact_us textarea{
+        margin-top: 10px;
+    }
+    .Contact_us input{
+        height: 40px;
+        outline: none !important;
+        box-shadow: none;
+        border: 1px solid var(--color-three);
+        border-radius: 3px;
+    }
+    .Contact_us input:focus{
+        outline: none !important;
+        outline-offset: 0;
+    }
+    .Contact_us .mess{
+        margin-top: 40px; 
+        width: 100%;
+
+    }
+    .Contact_us .mess textarea{
+        height: 200px;
+        border: 1px solid var(--color-three);
+    }
+    .Contact_us .submit{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+    }
+    .Contact_us .submit input{
+        width: 15%;
+        color: var(--color-two);
+        background-color: var(--color-four);
+        border: none;
+        border-radius: none;
+        margin: 0;
+        font-family: "OpenSans-SemiBold";
+        font-size: 16px;
+        
+    }
+    /* .Contact_us input:{
+        outline: none;
+        
+    } */
+    /* ////////////////////////////////////////// MAIN CONTACT-US */ 
+
+     /* ////////////////////////////////////////// FOOTER COPYRIGHT */ 
+     
+     
+    footer {
+        height: 10vh;
+        width: 100%;
+        position: relative;
+        background-color: var(--color-seven);
+        /* align-items: center; */
+        display: flex;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    footer .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .copyright {
+        
+        font-size: 12px;
+        font-family: "OpenSans-SemiBold";
+        color: var(--color-three);
+    }
+    footer .copyright span {
+        font-family: "OpenSans-Bold";
+    }
+    footer .soc-icons {
+       
+        display: flex;
+        align-items: center;
+    }
+    footer .soc-icons svg {
+        /* height: 30%; */
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        fill: var(--color-six);
+    }
+     /* ////////////////////////////////////////// FOOTER COPYRIGHT */ 
+
 /* /////////////////////////////////////////////////////////////////////// */
 
 ::-webkit-scrollbar-button {
