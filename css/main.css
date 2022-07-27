@@ -34,6 +34,21 @@ section header h2{
     text-transform: uppercase;
     text-align: center;
 }
+section header hr{
+   border: none;
+   height: 5px;
+   width: 120px;
+   background-color: var(--color-four);
+}
+section header .one{
+    height: 5px;
+    width: 100px;
+}
+section header .two{
+    margin-top: 14px;
+    height: 4px;
+    width: 60px;
+}
 section header span{
     font-family: "OpenSans-SemiBold";
 }
@@ -59,6 +74,8 @@ section.dark_theme header span{
 .constraint{
     padding: 100px 9%;
 }
+
+
 
 /* ////////////////////////////////////////// HEADER */
 header.header{
@@ -105,12 +122,39 @@ nav ul {
 }
 
 nav li {
-    padding-right: 20px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
 }
 nav li:last-child {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
+nav hr{
+    border: none;
+    height: 3px;
+    width: 0%;
+    background-color: var(--color-four);
+    position: absolute;
+    left: -10%;
+    bottom: -140%;
+    /* opacity: 0; */
+    transition: all ease-out 0.5s;
+    /* transition-delay: 0.3s; */
+}
+nav li:hover hr{
+    width: 120%;
+    /* opacity: 1;
+    transition: opacity ease 0.1s; */
+}
+nav li:not(:hover) hr{
+    /* background-color: var(--color-two); */
+     opacity: 0;
+   /* transition: opacity ease 0.1s; */
+}
+nav li:hover a{
+    transform: scale(1.1);
+}
 nav a{
     font-size: 14px;
    text-transform: uppercase;
@@ -131,7 +175,9 @@ main section{
 section{
 
 }
-
+section header{
+    margin-bottom: 90px;
+}
 section.Start_video{
     height: 100vh;
     width: 100%;
@@ -187,11 +233,12 @@ section.Start_video{
 
 .Start_video video {
     top: 0 ;
-    /* height: 100vh; */
-    width: 99.8vw;
+    height: 100vh;
+    width: 100vw;
     display: flex;
   position: absolute;
   z-index: 1;
+  object-fit: cover;
 }
 
 
@@ -210,13 +257,14 @@ section.About_us{
     overflow: hidden;
     z-index: 10;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
     .About_us .image_cont{
         position: relative;
         display: flex;
         width: max-content;
         height: 100%;
+        margin-right: 15%;
     }
     .About_us .comp{
         z-index: 3;
@@ -243,6 +291,9 @@ section.About_us{
     .About_us h3,.About_us h2{
         text-transform: uppercase;
 
+    }
+    .About_us h3,.About_us hr{
+        margin-left: 0;
     }
     .About_us h3{
         font-size: 20px;
@@ -298,11 +349,12 @@ section.About_us{
         background-color: transparent;
         border: 1px solid var(--color-six);
         color: var(--color-six);
-        font-family: "OpenSans-SemiBold";
+        font-family: "OpenSans-Bold";
         text-transform: uppercase;
         font-size: 12px;
         padding: 15px 20px;
         border-radius: 5px;
+        cursor: pointer;
     }
    /* ////////////////////////////////////////// MAIN ABOUT-US */
 
@@ -321,17 +373,12 @@ section.About_us{
         background-color: #111;
      
     }
-
-    .Our_team header{
-        margin-bottom: 130px;
-    }
-
     .Our_team h2{
         
     }
 
     .Our_team .list{
-        display: flex;
+        box-shadow: 0px -6px 53px 0px var(--color-one) inset;
         justify-content: space-around;
     }
 
@@ -340,6 +387,7 @@ section.About_us{
         flex-direction: column;
         width: 20%;
         align-items: center;
+        min-width: 0;
     }
 
     .Our_team .eclipse{
@@ -366,7 +414,7 @@ section.About_us{
         font-size: 14px;
         font-family: "OpenSans-Regular";
         padding: 0 9%;
-        line-height: 1.3vw;
+        line-height: 24px;
     }
 
     /* ////////////////////////////////////////// MAIN OUR-TEAM */
@@ -383,9 +431,7 @@ section.About_us{
             display: flex;
             flex-direction: column;
         }
-        .Our_services header{
-            margin-bottom: 90px;
-        }
+
         .Our_services blockquote{
             font-family: "OpenSans-Italic";
             font-size: 16px;
@@ -393,11 +439,11 @@ section.About_us{
             margin-bottom: 100px;
             text-align: center;
             width: 80%;
-            line-height: 1.4vw;
+            line-height: 24px;
         }
         .Our_services .list{
             display: flex;
-           
+            width: 100%;
             justify-content: space-around;
         }
     
@@ -458,13 +504,12 @@ section.About_us{
         display: flex;
         flex-direction: column;
     }
-    .Our_clients header{
-        margin-bottom: 90px;
-    }
+    
     .Our_clients .list{
         display: flex;
         justify-content: space-around;
         width: 100%;
+        
     }
 
     .Our_clients .item{
@@ -472,7 +517,12 @@ section.About_us{
         align-items: flex-end;
         width: max-content;
         justify-content: flex-end;
+        width: 16%;
     }
+    .Our_clients img{
+        width: 100%;
+    }
+
 
 
     /* ////////////////////////////////////////// MAIN OUR-CLIENTS */ 
@@ -489,9 +539,7 @@ section.About_us{
         display: flex;
         flex-direction: column;
     }
-    .Our_work header{
-        margin-bottom: 90px;
-    }
+   
     .Our_work blockquote{
         font-family: "OpenSans-Italic";
         font-size: 16px;
@@ -499,10 +547,12 @@ section.About_us{
         margin-bottom: 100px;
         text-align: center;
         width: 80%;
-        line-height: 1.4vw;
+        line-height: 24px;
     }
     .Our_work .list{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .Our_work .list_heading{
         width: 100%;
@@ -529,7 +579,7 @@ section.About_us{
 
     .Our_work .categories p{
        color: var(--color-three);
-      
+        word-wrap: normal;
     }
 
     .Our_work .categories p.active{
@@ -635,9 +685,7 @@ section.About_us{
         display: flex;
         flex-direction: column;
     }
-    .Our_testimonials header{
-        margin-bottom: 90px;
-    }
+   
     .Our_testimonials .quote{
         display: flex;
         flex-direction: column;
@@ -653,13 +701,14 @@ section.About_us{
         text-align: center;
         text-transform: uppercase;
         width: 80%;
-        line-height: 1.4vw;
+        line-height: 24px;
         color: var(--color-two);
     }
     .Our_testimonials .name{
         color: var(--color-three);
-        font-family:"OpenSans-SemiBold" ;
+        /* font-family:"OpenSans-SemiBold" ; */
         font-family:"OpenSans-Regular";
+        font-size: 18px;
     }
     .Our_testimonials .name span{
         font-family:"OpenSans-SemiBold" ;
@@ -681,9 +730,7 @@ section.About_us{
         display: flex;
         flex-direction: column;
     }
-    .Contact_us header{
-        margin-bottom: 90px;
-    }
+   
     .Contact_us blockquote{
         font-family: "OpenSans-Italic";
         font-size: 16px;
@@ -691,7 +738,7 @@ section.About_us{
         margin-bottom: 100px;
         text-align: center;
         width: 70%;
-        line-height: 1.4vw;
+        line-height: 24px;
     }
     .Contact_us form{
         width: 70%;
@@ -727,6 +774,8 @@ section.About_us{
         box-shadow: none;
         border: 1px solid var(--color-three);
         border-radius: 3px;
+        font-size: 18px;
+        padding: 0 20px;
     }
     .Contact_us input:focus{
         outline: none !important;
@@ -756,7 +805,7 @@ section.About_us{
         margin: 0;
         font-family: "OpenSans-SemiBold";
         font-size: 16px;
-        
+        cursor: pointer;
     }
     /* .Contact_us input:{
         outline: none;
@@ -803,6 +852,10 @@ section.About_us{
         height: 30px;
         margin-left: 10px;
         fill: var(--color-six);
+        cursor: pointer;
+    }
+    footer .soc-icons svg:hover {
+        fill: var(--color-five);
     }
      /* ////////////////////////////////////////// FOOTER COPYRIGHT */ 
 
@@ -839,3 +892,71 @@ section.About_us{
     ::-webkit-scrollbar{
     width: 4px;
     }
+
+    /* Слайдер */
+.slick-slider{
+    overflow: hidden;
+    min-width: 0;
+    align-items: center;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{
+    /* display: flex; */
+}
+/* Ограничивающая оболочка */
+.slick-list {}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    /* display: none; */
+    
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    /* display: none; */
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    width: 5%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+
+}
+.slick-dots li{
+   
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    background-color: var(--color-four);
+}
+/* Элемент точки */
+.slick-dots li button{
+    cursor: pointer;
+    background-color: var(--color-two);
+    width: 15px;
+    height: 15px;
+    font-size: 0px;
+    padding: 0;
+    border: 1px solid var(--color-one);
+}
