@@ -564,7 +564,7 @@ section.About_us{
         line-height: 24px;
     }
     .Our_work .list{
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
     }
@@ -594,6 +594,7 @@ section.About_us{
     .Our_work .categories p{
        color: var(--color-three);
         word-wrap: normal;
+        cursor: pointer;
     }
 
     .Our_work .categories p.active{
@@ -623,9 +624,9 @@ section.About_us{
 
     .Our_work .item{
         width: 22.2%;
-        height: 15vw;
+        height: 14vw;
         background-color: #111;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         overflow: hidden;
         position: relative;
     }
