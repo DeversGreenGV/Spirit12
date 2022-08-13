@@ -26,10 +26,7 @@ $(document).ready(function name(params) {
     });
 });
 
-sal({
-    threshold: 0.3,
-    once : false,
-});
+
 /* ////////////////////////////////////////// SLAIDERS */
 
 /* ////////////////////////////////////////// CATEGORIES */
