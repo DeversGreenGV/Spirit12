@@ -97,7 +97,7 @@ header.header{
 }
 
 .logo{
-
+    z-index: 12;
 }
 .logo a{
     font-size: 28px;
@@ -111,8 +111,8 @@ header.header{
     text-decoration: none;
 }
 
-nav{
-    
+.Navigation{
+    top: 0;
 }
 
 nav ul{
@@ -162,6 +162,21 @@ nav a{
    text-transform: uppercase;
 }
 
+.MenuButton{
+ display: none;
+align-items: center;
+}
+.MenuButton .MenuButtonActive,.MenuButton .MenuButtonNone{ 
+    width: 39px;
+    height: 34px;
+    fill: var(--color-two);
+   
+}
+.MenuButtonNone{
+    display: none;
+    z-index: 5;
+    stroke: var(--color-two);
+}
 /* ////////////////////////////////////////// HEADER */
 
 /* ////////////////////////////////////////// MAIN START-VIDEO */
@@ -239,12 +254,21 @@ section.Start_video{
     margin: auto;
     left: 0; bottom: 100px; right: 0;
     z-index: 500;
-    width: 55px;
-    height: 55px;
+    fill: #989898cc;
+    border: 2px solid var(--color-three);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
+}
+.Start_video svg use{
+    transform: translate(18%, 18%);
 }
 .Start_video svg:hover{
     fill: #e8ab4e;
+    border-color: #e8ab4e;
 }
 .Start_video video {
     top: 0 ;
@@ -333,7 +357,7 @@ section.About_us{
     }
     .About_us .desc{
         margin: 0px 0;
-        width: 68%;
+        width: 460px;
         font-size: 18px;
         font-family: "OpenSans-Regular";
         color: var(--color-three);
@@ -417,7 +441,9 @@ section.About_us{
     .Our_team .eclipse{
         width: 127px;
         height:127px ;
-        background-color: #c3c3c3;
+        background-image: url(images/team/photo.jpg);
+        background-position: 50% 0%;
+        background-size: 300%;
         border-radius: 50%;
         margin-bottom: 20px;
     }
@@ -676,8 +702,8 @@ section.About_us{
     }
     .Our_work .item_hover .caption{
         text-transform: uppercase;
-        font-family: "OpenSans-SemiBold";
-        font-size: 24px;
+        font-family: "OpenSans-Regular";
+        font-size: 1.2vw;
         margin-top: 65px;
         margin-bottom: 5px;
     }
@@ -950,7 +976,9 @@ section.About_us{
     width: 100%;
 }
 /* Слайд */
-.slick-slide{}
+.slick-slide{
+
+}
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
 /* Слайд основной */
@@ -974,12 +1002,11 @@ section.About_us{
 .slick-arrow.slick-disabled{}
 /* Точки (булиты) */
 .slick-dots{
-    width: 5%;
+        width: 90px;
     margin: 0px auto;
     display: flex;
     justify-content: space-around;
     margin-top: 70px;
-
 }
     .Our_clients .slick-dots{
         margin-top: 100px;

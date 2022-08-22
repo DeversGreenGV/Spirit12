@@ -1,22 +1,60 @@
 /* ////////////////////////////////////////// SLAIDERS */
-$(document).ready(function name(params) {
-    $('.Our_team .list').slick({
+
+    let OurTeam = $('.Our_team .list');
+    let OurClients = $('.Our_clients .list');
+    let OurTestimonials = $('.Our_testimonials .list');
+
+    OurTeam.slick({
         infinite: true,
+        arrows: false,
+        dots: true,
+        responsive:[
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+
+        ],
+        autoplay: false,
         slidesToShow: 4,
         slidesToScroll: 4,
-        arrows: false,
-        dots: true
+        
+        
+       
 
     });
-    $('.Our_clients .list').slick({
+    OurClients.slick({
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 5,
         arrows: false,
-        dots: true
+        dots: true,
+        responsive:[
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+
+        ],
 
     });
-    $('.Our_testimonials .list').slick({
+    OurTestimonials.slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -24,76 +62,89 @@ $(document).ready(function name(params) {
         dots: true
 
     });
-});
 
+
+
+window.STORAGE = {}
+
+// STORAGE.SectionsList = document.querySelectorAll('section');
+
+// for (let k = 2; k < STORAGE.SectionsList .length; k++) {
+    
+//         let section = STORAGE.SectionsList[k];
+//         // // console.log(section);
+//         let sectionHTML = section.innerHTML;
+//         section.innerHTML = '';
+//         section.insertAdjacentHTML('afterbegin', `<div class="sal_container" data-sal="zoom-out" data-sal-delay="300" data-sal-easing="cubic-bezier(0.55, 0, 1, 0.45)">`+sectionHTML+`</div>`);
+// }
 
 /* ////////////////////////////////////////// SLAIDERS */
 
 /* ////////////////////////////////////////// CATEGORIES */
 /* --------------------------------------------------- Помещаем ссылки на фото ( которые будут использоваться в item-ах ) в массив */
-    let photo = []
+    STORAGE.photo = [];
 
     for (let i = 0; i < 3; i++) {
-        photo.push(`css/images/portfolio/Layer 0${i+1}.jpg`)
+        STORAGE.photo.push(`css/images/portfolio/Layer 0${i+1}.jpg`)
     }
 /* --------------------------------------------------- */
 let works_data= {
     work_1 : {
-        photo_link : photo[0],
+        photo_link : STORAGE.photo[0],
         work_caption : 'Trend and fashion',
         work_category : 'Website design',
 
     },
     work_1_1 : {
-        photo_link : photo[0],
+        photo_link : STORAGE.photo[0],
         work_caption : 'Trend and fashion',
         work_category : 'Website design',
 
     },
     work_1_2 : {
-        photo_link : photo[0],
+        photo_link : STORAGE.photo[0],
         work_caption : 'Trend and fashion',
         work_category : 'Website design',
 
     },
     work_2 : {
-        photo_link : photo[1],
+        photo_link : STORAGE.photo[1],
         work_caption : 'Trend and fashion',
         work_category : 'Mobile design',
     },
     work_2_1 : {
-        photo_link : photo[1],
+        photo_link : STORAGE.photo[1],
         work_caption : 'Trend and fashion',
         work_category : 'Mobile design',
     },
     work_2_2 : {
-        photo_link : photo[1],
+        photo_link : STORAGE.photo[1],
         work_caption : 'Trend and fashion',
         work_category : 'Mobile design',
     },
     work_3 : {
-        photo_link : photo[2],
+        photo_link : STORAGE.photo[2],
         work_caption : 'Trend and fashion',
         work_category : 'Photograhy',
     },
     work_3_1 : {
-        photo_link : photo[2],
+        photo_link : STORAGE.photo[2],
         work_caption : 'Trend and fashion',
         work_category : 'Photograhy',
     },
     work_3_2 : {
-        photo_link : photo[2],
+        photo_link : STORAGE.photo[2],
         work_caption : 'Trend and fashion',
         work_category : 'Photograhy',
     },
 }
 
-let CategoriesItems = document.querySelector('.Our_work .items'), // Получаем доступ к items
-    arr_item_cat = [];                                            // Создаем массив состоящий из категорий каждого item
-const arr_works_data = Object.values(works_data);                 // Создаем массив объектов ( для более простой работы с works_data )
-
+    STORAGE.WorksContainer = document.querySelector('.Our_work .items'), // Получаем доступ к items
+    STORAGE.WorksArrayCat = [];                                            // Создаем массив состоящий из категорий каждого item
+    STORAGE.ArrayWorksData = Object.values(works_data);                 // Создаем массив объектов ( для более простой работы с works_data )
+    console.log(STORAGE.WorksArrayCat);
 /* --------------------------------------------------- Создание item-ов и добавление их в doсument*/
-    for (key of arr_works_data) {
+    for (key of  STORAGE.ArrayWorksData) {
         let text =  `
                 <div class="item">
                     <img src="${key.photo_link}" alt="">
@@ -107,53 +158,101 @@ const arr_works_data = Object.values(works_data);                 // Созда�
                         </div>
                 </div>
             `;
-        arr_item_cat.push(key.work_category);
-        CategoriesItems.insertAdjacentHTML('beforeend', text);    
+            STORAGE.WorksArrayCat.push(key.work_category);
+            STORAGE.WorksContainer.insertAdjacentHTML('beforeend', text);    
     }
 /* --------------------------------------------------- */   
+    
+    STORAGE.CategoriesName = ['All','Website design','Mobile design','Photograhy'];
+    STORAGE.CategoriesButton = Array.from( document.querySelectorAll('.categories p'));
+    STORAGE.WorksItems = document.querySelectorAll('.Our_work .item');
+    
+    STORAGE.CategoriesActiveIndex= 0;
 
-let CategoriesName = ['All','Website design','Mobile design','Photograhy'],
-    Categories = Array.from( document.querySelectorAll('.categories p')),
-    CategoriesItem = document.querySelectorAll('.Our_work .item'),
-    indexCat = 0,
     NoDisplay = function () {
-        CategoriesItem.forEach(function (item,index) {
-            CategoriesItem[index].style.display ="none";
+        STORAGE.WorksItems.forEach(function (item,index) {
+            STORAGE.WorksItems[index].style.display ="none";
         });
     },
     AllDisplay = function () {
-        CategoriesItem.forEach(function (item,index) {
-            CategoriesItem[index].style.display ="flex";
+        STORAGE.WorksItems.forEach(function (item,index) {
+            STORAGE.WorksItems[index].style.display ="flex";
         });
     }
 
-Categories.forEach(function (elem,index,arr) {  // Перебираем все категории (кнопки) с помощью forEach ( вместо цикла for )
+
+STORAGE.CategoriesButton.forEach(function (elem,index,arr) {  // Перебираем все категории (кнопки) с помощью forEach ( вместо цикла for )
     elem.addEventListener('click',function () { // Добавляем событие нажатия категории (кнопки) 
-
-    indexCat = index; // Помещаем index выбранной категории в переменную
-
-        if (indexCat == 0) {    // Если index равен нулю ( выбрана категория all) то...
-
+      
+        STORAGE.CategoriesActiveIndex = index; // Помещаем index выбранной категории в переменную
+        // console.log( STORAGE.CategoriesActiveIndex);
+        if (STORAGE.CategoriesActiveIndex == 0) {    // Если index равен нулю ( выбрана категория all) то...
+            // console.log(111);
             AllDisplay();       // Включаем видимость у всех item
 
         } else {                // Иначе...
             /* --------------------------------------------------- Показ активных элементов */
+            // console.log(STORAGE.CategoriesButton);
+                NoDisplay();    // Выключаем видимость у всех item
                 
-                NoDisplay();                                            // Выключаем видимость у всех item
-                for (let i = 0; i < arr_item_cat.length; i++) {         // перебираем категории item-ов  
-                    if ( arr_item_cat[i] == CategoriesName[indexCat]) { // если категория item-а совпадает с выбранной пользователем категорией то...
-                        CategoriesItem[i].style.display ="flex";        //  Включаем видимость item-а
+                                                     
+                for (let i = 0; i <  STORAGE.WorksArrayCat.length; i++) {         // перебираем категории item-ов  
+                    // console.log(111);   
+                    if (  STORAGE.WorksArrayCat[i] == STORAGE.CategoriesName[STORAGE.CategoriesActiveIndex]) { // если категория item-а совпадает с выбранной пользователем категорией то...
+                        STORAGE.WorksItems[i].style.display ="flex";        //  Включаем видимость item-а
                     }
                 }
             /* --------------------------------------------------- */       
         }
         /* --------------------------------------------------- Стилизация кнопок категорий */
-            Categories.forEach(NAelement => {
-                NAelement.classList.remove('active');
+            STORAGE.CategoriesButton.forEach(NotActiveElement => {
+                NotActiveElement.classList.remove('active');
             });
             this.classList.toggle('active');
-        /* --------------------------------------------------- */
+        // /* --------------------------------------------------- */
     });
+});
+// console.log(STORAGE);
+
+STORAGE.ArrowDawn = document.querySelector('.Start_video .arrow_dawn');
+STORAGE.AboutUs = document.querySelector('.About_us');
+// console.log(AboutUs);
+STORAGE.ArrowDawn.addEventListener('click', function name(params) {
+    // STORAGE.AboutUs.scrollIntoView();    
+    let ScrollDiv = STORAGE.AboutUs.offsetTop;
+    window.scrollTo({ top: ScrollDiv, behavior: 'smooth'});
+    
+});
+
+STORAGE.MenuButtonActive = document.querySelector('.MenuButtonActive');
+STORAGE.MenuButtonNone = document.querySelector('.MenuButtonNone');
+STORAGE.NavMenu = document.querySelector('nav');
+STORAGE.MenuButtonActive.addEventListener('click',function () {
+    console.log(111);
+     document.body.style.overflow = "hidden";
+     STORAGE.NavMenu.style.top = "0"
+      setTimeout(() => {
+        STORAGE.NavMenu.style.display ="flex";
+    }, 1000);
+     
+    STORAGE.NavMenu.style.display ="flex";
+    
+    STORAGE.MenuButtonActive.style.opacity="0";
+    STORAGE.MenuButtonNone.style.display ="flex";
+
+});
+
+STORAGE.MenuButtonNone.addEventListener('click',function () {
+    console.log(111);
+    document.body.style.overflow = "auto";
+    STORAGE.NavMenu.style.top = "-100%"
+    setTimeout(() => {
+        STORAGE.NavMenu.style.display ="none";
+    }, 1000);
+    
+    STORAGE.MenuButtonActive.style.opacity="1";
+    STORAGE.MenuButtonNone.style.display ="none";
+
 });
 
 /* ////////////////////////////////////////// CATEGORIES */
