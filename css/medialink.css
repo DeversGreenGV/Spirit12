@@ -194,6 +194,34 @@
         /* margin-bottom: 25px; */
         padding: 0 15%;
     }
+    .About_us ul {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .About_us li.item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .About_us .item span {
+        font-size: 20px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .About_us i {
+        display: none;
+    }
+    .About_us .item p {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .About_us .item span:last-child {
+        display: none;
+    }
     .Our_services .list {
         display: flex;
         width: 100%;
@@ -359,5 +387,10 @@
         margin: 35px 0;
         padding: 0 ;
         line-height: 26px;
+    }
+    .About_us a {
+        margin-top: 20px;
+        font-size: 12px;
+        padding: 15px 20px;
     }
 }
