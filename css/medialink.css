@@ -340,4 +340,24 @@
     .Start_video p {
         font-size: 5vw;
     }
+    .About_us .image_cont {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 320px;
+        margin-bottom: 0px;
+    }
+    .About_us .comp {
+        height: 70vw;
+        width: 100vw;
+    }
+    .About_us .desc {
+        margin: 0px;
+        width: auto;
+        font-size: 16px;
+        text-align: center;
+        margin: 35px 0;
+        padding: 0 ;
+        line-height: 26px;
+    }
 }
