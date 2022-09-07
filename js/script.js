@@ -13,12 +13,14 @@
                 breakpoint: 1000,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 3,
                 }
             },
             {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             },
 
@@ -42,12 +44,14 @@
                 breakpoint: 1000,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 3,
                 }
             },
             {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             },
 
@@ -230,7 +234,7 @@ STORAGE.NavMenu = document.querySelector('nav');
 STORAGE.MenuButtonActive.addEventListener('click',function () {
     console.log(111);
      document.body.style.overflow = "hidden";
-     STORAGE.NavMenu.style.top = "0"
+     STORAGE.NavMenu.style.left = "0"
       setTimeout(() => {
         STORAGE.NavMenu.style.display ="flex";
     }, 1000);
@@ -245,7 +249,7 @@ STORAGE.MenuButtonActive.addEventListener('click',function () {
 STORAGE.MenuButtonNone.addEventListener('click',function () {
     console.log(111);
     document.body.style.overflow = "auto";
-    STORAGE.NavMenu.style.top = "-100%"
+    STORAGE.NavMenu.style.left = "-100%"
     setTimeout(() => {
         STORAGE.NavMenu.style.display ="none";
     }, 1000);
