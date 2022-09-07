@@ -359,6 +359,19 @@
     }
 }
 @media (max-width: 500px) { 
+    section header h2 {
+        font-size: 30px;
+    }
+
+    section header .one {
+        height: 4px;
+        width: 80px;
+    }
+    section header .one {
+        height: 3px;
+        width: 50px;
+    }
+   
     .Start_video .container {
         padding-top: 34vh;
     }
@@ -390,7 +403,22 @@
     }
     .About_us a {
         margin-top: 20px;
-        font-size: 12px;
+        font-size: 14px;
         padding: 15px 20px;
     }
+
+    .Our_team .eclipse {
+        width: 160px;
+        height: 160px;
+        background-image: url(images/team/photo.jpg);
+        background-position: 50% 0%;
+        background-size: 300%;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .slick-dots {
+        width: 220px;
+    }
+
 }
