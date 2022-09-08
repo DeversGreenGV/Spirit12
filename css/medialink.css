@@ -419,20 +419,20 @@
     }
     .About_us .item p {
         font-size: 4.8vw;
-        text-align: center;
+        text-align: left;
+        align-items: flex-start;
     }
     .About_us .desc {
-
         width: auto;
         font-size: 4.8vw;
-        text-align: center;
-        margin: 35px 0;
-        padding: 0 ;
-        line-height: 26px;
+        text-align: justify;
+        margin: 8vw 0;
+        padding: 0;
+        line-height: 35px;
     }
     .About_us a {
         margin-top: 35px;
-        font-size: 14px;
+        font-size: 4.2vw;
         padding: 15px 20px;
     }
 
