@@ -365,9 +365,9 @@
 
     section header .one {
         height: 4px;
-        width: 80px;
+        width: 70px;
     }
-    section header .one {
+    section header .two {
         height: 3px;
         width: 50px;
     }
@@ -381,40 +381,89 @@
     .Start_video p {
         font-size: 5vw;
     }
+    .Start_video svg {
+        left: 0;
+        bottom: 150px;
+        right: 0;  
+        width: 22vw;
+        height: 22vw;
+    }
     .About_us .image_cont {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 320px;
+        height: max-content;
         margin-bottom: 0px;
+    }
+    .About_us .text {
+      margin-top: 15%;
+    }
+    .About_us h2 {
+        font-size: 6.8vw;
+    }
+    .About_us h3 {
+        font-size: 5.2vw;
     }
     .About_us .comp {
         height: 70vw;
         width: 100vw;
     }
+    .About_us li.item {
+        margin-bottom: 30px;
+    }
+    .About_us li.item:last-child {
+        margin-bottom: 0px;
+    }
+    .About_us .item span {
+        font-size: 5.2vw;
+    }
+    .About_us .item p {
+        font-size: 4.8vw;
+        text-align: center;
+    }
     .About_us .desc {
-        margin: 0px;
+
         width: auto;
-        font-size: 16px;
+        font-size: 4.8vw;
         text-align: center;
         margin: 35px 0;
         padding: 0 ;
         line-height: 26px;
     }
     .About_us a {
-        margin-top: 20px;
+        margin-top: 35px;
         font-size: 14px;
         padding: 15px 20px;
     }
 
     .Our_team .eclipse {
-        width: 160px;
-        height: 160px;
+        width: 200px;
+        height: 200px;
         background-image: url(images/team/photo.jpg);
-        background-position: 50% 0%;
-        background-size: 300%;
-        border-radius: 50%;
         margin-bottom: 20px;
+    }
+    .Our_team .name {
+        font-size: 25px;
+    }
+    .Our_team .position {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .Our_team .description {
+      margin-top: 14px;
+        font-size: 16px;
+        padding: 0px 9%;
+    }
+
+    .Our_services blockquote {
+        font-size: 16px;
+        width: 100%;
+        line-height: 28px;
+       
+    }
+    .Our_services .eclipse {
+        width: 100px;
+        height: 100px;
     }
 
     .slick-dots {
