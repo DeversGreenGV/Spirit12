@@ -360,16 +360,16 @@
 }
 @media (max-width: 500px) { 
     section header h2 {
-        font-size: 30px;
+        font-size: 6.8vw;
     }
 
     section header .one {
         height: 4px;
-        width: 70px;
+        width: 20vw;
     }
     section header .two {
         height: 3px;
-        width: 50px;
+        width: 14vw;
     }
    
     .Start_video .container {
@@ -385,8 +385,8 @@
         left: 0;
         bottom: 150px;
         right: 0;  
-        width: 22vw;
-        height: 22vw;
+        width: 20vw;
+        height: 20vw;
     }
     .About_us .image_cont {
         display: flex;
@@ -431,10 +431,12 @@
         line-height: 35px;
     }
     .About_us a {
-        margin-top: 35px;
+        margin-top: 55px;
         font-size: 4.2vw;
         padding: 15px 20px;
+        border-width: 2px;
     }
+    
 
     .Our_team .eclipse {
         width: 200px;

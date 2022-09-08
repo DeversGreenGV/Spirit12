@@ -14,6 +14,8 @@
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
                 }
             },
             {
@@ -21,6 +23,8 @@
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
                 }
             },
             {
@@ -29,6 +33,8 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
                 }
             },
 
