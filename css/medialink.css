@@ -318,6 +318,9 @@
         align-items: center;
         margin-bottom: 30px;
     }
+    .Our_clients img {
+        width: max-content;
+    }
     .Our_work .categories {
         width: 100%;
         flex-direction: column;
@@ -357,6 +360,11 @@
         fill: var(--color-six);
         cursor: pointer;
     }
+
+    .slick-dots {
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
 @media (max-width: 500px) { 
     section header {
@@ -374,7 +382,10 @@
         height: 3px;
         width: 14vw;
     }
-   
+    .dark_theme {
+        
+    }
+
     .Start_video .container {
         padding-top: 34vh;
     }
@@ -441,7 +452,7 @@
     }
     
     section.Our_team {
-        height: 100vh;
+      
     }
     .Our_team .eclipse {
         width: 55vw;
@@ -463,16 +474,99 @@
     }
 
     .Our_services blockquote {
-        font-size: 16px;
+        font-size: 3.6vw;
         text-align: justify;
         width: 100%;
-        line-height: 28px;
+        line-height: 165%;
+        margin-bottom: 16%;
        
     }
-    .Our_services .eclipse {
-        width: 100px;
-        height: 100px;
+    .Our_services .item {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 14%;
+        min-height: 40vw;
+        position: relative;
     }
+    .Our_services .eclipse {
+        width: 20vw;
+        height: 20vw;
+        position: absolute;
+        left: 10%;
+        border-width: 3px;
+    }
+    .Our_services .serv_name {
+        position: absolute;
+        font-size: 4.5vw;
+        top: 6.6vw;
+        left: 39%;
+    }
+    .Our_services .description {
+        padding: 0 6%;
+        position: absolute;
+        bottom: 0;
+        text-align: justify;
+        font-size: 3.6vw;
+    }
+
+    section.Our_clients {
+        width: 100%;
+        position: relative;
+        /* min-height: 110vh; */
+        display: flex;
+        align-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Our_clients header{
+            margin-bottom: 32%;
+    }
+    .Our_work blockquote {
+        font-size: 3.6vw;
+        text-align: justify;
+        width: 100%;
+        line-height: 165%;
+        margin-bottom: 16%;
+    }
+    .Our_work .title {
+        font-size: 4.5vw;
+        margin-bottom: 15px;
+    }
+    .Our_work .categories p {
+        font-size: 3.6vw;
+        /* margin-bottom: 10px; */
+    }
+    .Our_work .categories hr {
+        background-color: var(--color-three);
+        height: 2px;
+        border: none;
+        width: 50vw;
+        margin: 10px 0;
+        /* display: none; */
+    }
+    .Our_work .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .Our_work .item {
+        width: 80%;
+        height: 65vw;
+    }
+    .Our_testimonials blockquote {
+        line-height: 175%;
+        text-align: justify;
+        font-size: 4.4vw;
+        margin-bottom: 8%;
+    }
+    .Our_testimonials .name {
+        font-size: 4.5vw;
+    }
+    .Our_clients .slick-dots {
+        margin-top: 18%;
+    }
+
 
     .slick-dots {
         width:100%;
