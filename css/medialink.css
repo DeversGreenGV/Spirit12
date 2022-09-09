@@ -432,13 +432,13 @@
         font-size: 5.2vw;
     }
     .About_us .item p {
-        font-size: 4.8vw;
+        font-size: 4.2vw;
         text-align: left;
         align-items: flex-start;
     }
     .About_us .desc {
         width: auto;
-        font-size: 4.8vw;
+        font-size: 4.2vw;
         text-align: justify;
         margin: 8vw 0;
         padding: 0;
@@ -474,10 +474,10 @@
     }
 
     .Our_services blockquote {
-        font-size: 3.6vw;
+        font-size: 4.2vw;
         text-align: justify;
         width: 100%;
-        line-height: 165%;
+        line-height: 175%;
         margin-bottom: 16%;
        
     }
@@ -485,7 +485,7 @@
         width: 100%;
         align-items: center;
         margin-bottom: 14%;
-        min-height: 40vw;
+        min-height: 45vw;
         position: relative;
     }
     .Our_services .eclipse {
@@ -506,7 +506,7 @@
         position: absolute;
         bottom: 0;
         text-align: justify;
-        font-size: 3.6vw;
+        font-size: 4.2vw;
     }
 
     section.Our_clients {
@@ -522,10 +522,10 @@
         margin-bottom: 16%;
     }
     .Our_work blockquote {
-        font-size: 3.6vw;
+        font-size: 4.2vw;
         text-align: justify;
         width: 100%;
-        line-height: 165%;
+        line-height: 175%;
         margin-bottom: 16%;
     }
     .Our_work .title {
@@ -576,9 +576,13 @@
         text-align: justify;
         font-size: 4.4vw;
         margin-bottom: 8%;
+        width: 95%;
     }
     .Our_testimonials .name {
         font-size: 4.5vw;
+    }
+    .Our_testimonials .slick-dots {
+        margin-top: 20%;
     }
     .Our_clients .slick-dots {
         margin-top: 18%;
@@ -594,7 +598,7 @@
         width: 52%;
         height: max-content;
     }
-
+    
     .slick-dots {
         width:100%;
     }
