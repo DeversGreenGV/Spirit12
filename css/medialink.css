@@ -519,7 +519,7 @@
         justify-content: center;
     }
     .Our_clients header{
-            margin-bottom: 32%;
+        margin-bottom: 16%;
     }
     .Our_work blockquote {
         font-size: 3.6vw;
@@ -554,6 +554,23 @@
         width: 80%;
         height: 65vw;
     }
+    .Our_work .item_hover {
+       padding-top: 30%;
+    }
+    .Our_work .item_hover .caption {
+        font-size: 4.4vw;
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }
+    .Our_work .item_hover .category {
+
+        font-size: 3.6vw;
+    }
+    .Our_work .item_hover svg {
+        margin-top: 25px;
+        width: 22%;
+        height: 22%;
+    }
     .Our_testimonials blockquote {
         line-height: 175%;
         text-align: justify;
@@ -566,7 +583,17 @@
     .Our_clients .slick-dots {
         margin-top: 18%;
     }
-
+    .Our_clients .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 14vw;
+        min-width: 0px;
+    }
+    .Our_clients img {
+        width: 52%;
+        height: max-content;
+    }
 
     .slick-dots {
         width:100%;
