@@ -359,6 +359,9 @@
     }
 }
 @media (max-width: 500px) { 
+    section header {
+        margin-bottom: 30px;
+    }
     section header h2 {
         font-size: 6.8vw;
     }
@@ -437,28 +440,31 @@
         border-width: 2px;
     }
     
-
+    section.Our_team {
+        height: 100vh;
+    }
     .Our_team .eclipse {
-        width: 200px;
-        height: 200px;
+        width: 55vw;
+        height: 55vw;
         background-image: url(images/team/photo.jpg);
         margin-bottom: 20px;
     }
     .Our_team .name {
-        font-size: 25px;
+        font-size: 6.4vw;
     }
     .Our_team .position {
-        font-size: 20px;
+        font-size: 5.2vw;
         margin-top: 5px;
     }
     .Our_team .description {
       margin-top: 14px;
-        font-size: 16px;
-        padding: 0px 9%;
+      font-size: 4.2vw;
+      padding: 0px 3%;
     }
 
     .Our_services blockquote {
         font-size: 16px;
+        text-align: justify;
         width: 100%;
         line-height: 28px;
        
@@ -469,7 +475,11 @@
     }
 
     .slick-dots {
-        width: 220px;
+        width:100%;
+    }
+    .slick-dots li button {
+        width: 4.5vw;
+        height: 4.5vw;
     }
 
 }
