@@ -338,9 +338,9 @@
     }
 
     footer {
-        height: 14vh;
+        height: auto;
         width: 100%;
-       
+        padding: 6% 9% !important;
     }
     footer .container {
         width: 100%;
@@ -352,6 +352,7 @@
     footer .copyright {
         font-size: 15px;
         text-align: center;
+        margin-bottom: 4%;
     }
     footer .soc-icons svg {
         width: 34px;
@@ -397,8 +398,8 @@
     }
     .Start_video svg {
         left: 0;
-        bottom: 150px;
-        right: 0;  
+        top: 80vh;
+        right: 0;
         width: 20vw;
         height: 20vw;
     }
@@ -598,7 +599,57 @@
         width: 52%;
         height: max-content;
     }
+    .Contact_us blockquote {
+        font-size: 4.2vw;
+        text-align: justify;
+        width: 100%;
+        line-height: 175%;
+        margin-bottom: 16%;
+    }
+    .Contact_us .name, .Contact_us .email {
+        width: 100%;
+        
+    }
+    .Contact_us .name{
+        margin-bottom: 10%;
+    }
+    .Contact_us .submit input {
+        width: 60%;  
+       
+    }
+    .Contact_us label p,.Contact_us .submit input{
+      
+        font-size: 4.2vw;
+    }
+    footer {
+        height: auto;
+        width: 100%;
+        padding: 6% 9% !important;
+    }
+    footer .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    footer .copyright {
+        font-size: 3.2vw;
+        text-align: center;
+        margin-bottom: 4%;
+    }
+    footer .soc-icons {
     
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    footer .soc-icons svg {
+        width: 8vw;
+        height: 8vw;
+        margin-left: 0px;
+       
+    }
+
     .slick-dots {
         width:100%;
     }
