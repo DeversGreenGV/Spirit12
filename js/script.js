@@ -10,6 +10,15 @@
         dots: true,
         responsive:[
             {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
+                }
+            },
+            {
                 breakpoint: 1000,
                 settings: {
                     slidesToShow: 3,
@@ -21,22 +30,13 @@
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    pauseOnFocus: false,
-                    pauseOnHover: false,
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    // autoplay: true,
                     pauseOnFocus: false,
                     pauseOnHover: false,
                 }
             },
+            
 
         ],
         autoplay: false,
